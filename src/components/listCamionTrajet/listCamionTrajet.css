@@ -1,0 +1,185 @@
+.global.normal{
+    background-color: #1D253D;
+}
+.global.blurred {
+    pointer-events: none;
+}
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 226.5px;
+}
+.links-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.links-list a{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+}
+.navbar-list p{
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20.8px;
+}
+.navbar-list img{
+    background-color: #FFF;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.20);
+    margin-left: 280px;
+}
+.camions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 59.5px;
+}
+#id1{
+    color: #FFF;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.listCamion{
+    width: 90%;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.buttonCamion button p{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buttonCamion button{
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background-color: #1D253D;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#ajout{
+    width: 328px;
+    height: 65px;
+}
+#affichage{
+    width: 231px;
+    height: 65px;
+}
+.buttonCamion{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.trajets{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 59.5px;
+}
+#id2{
+    color: #FFF;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.listTrajet{
+    width: 90%;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.buttonTrajet button p{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buttonTrajet button{
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background-color: #1D253D;
+    margin-left: 25px;
+    cursor: pointer;
+}
+#ajout1{
+    width: 328px;
+    height: 65px;
+}
+#affichage1{
+    width: 231px;
+    height: 65px;
+}
+.buttonTrajet{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer{
+    height: 134px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000; 
+    max-height: 500px; 
+    overflow-y: auto;
+}
+.exception{
+    position: absolute;
+    pointer-events: auto;
+}

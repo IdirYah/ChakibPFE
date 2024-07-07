@@ -1,0 +1,83 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-section {
+    width: 45%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .submit-btn {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #8a939d;
+  }
+  .dropdown-toggle {
+    background-color: #fff;
+    color: #000000;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .dropdown-menu li {
+    padding: 10px 0px;
+    cursor: pointer;
+  }
+  .dropdown-menu {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    width: 100%;
+  }

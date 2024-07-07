@@ -1,0 +1,105 @@
+.global-login{
+    background-color: #1D253D;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#logo{
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px;
+    margin-top: 105px;
+    margin-left: 109px;
+}
+.login{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;    
+    align-items: center;
+    margin-top: 83px;
+}
+#text{
+    color: #FFF;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+.inputs-login{
+    margin-top: 92px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.inputs-login input{
+    border-top: none;
+    border-left: none;
+    border-right: none;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    background-color: #1D253D;
+    width: 26%;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+.buttons-login{
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-login button{
+    width: 11%;
+    height: 62px;
+    border-radius: 41px;
+    border: 1px solid #FFF;
+    background-color: #1D253D;
+    margin-right: 22px;
+    cursor: pointer;
+}
+.buttons-login button p{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#inscription{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 22px;
+}
+#inscription span{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.img-login{
+    margin-top: 88px;
+    margin-bottom: 52px;
+    width: 90%;
+}
+.message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

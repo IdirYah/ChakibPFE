@@ -1,0 +1,128 @@
+.bodyApp2 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.bodyApp2 .container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.bodyApp2 .left-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-section h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.left-section h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.bodyApp2 form {
+  width: 100%;
+}
+ 
+.bodyApp2 form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bodyApp2 form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+}
+
+.checkbox label {
+  font-size: 14px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1D253D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4b5563;
+}
+
+.left-section p {
+  margin-top: 20px;
+}
+
+.left-section a {
+  color: #1D253D;
+  text-decoration: none;
+}
+
+.left-section a:hover {
+  text-decoration: underline;
+}
+.right-section {
+  flex: 1;
+  background-color: #1D253D;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  
+  margin-right: 15%;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.img4{
+  position: static;
+  right: 50%;
+
+  
+
+}
+
+.messageInscription {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

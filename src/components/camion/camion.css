@@ -1,0 +1,61 @@
+.kolch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1D253D;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    margin-bottom: 39px;
+    width: 86%;
+}
+.camion{
+    width: 86%;
+    height: 312px;
+    padding-top: 69px;
+    padding-bottom: 69px;
+    padding-left: 67px;
+    padding-right: 29px;
+    margin-bottom: 39px;  
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.colonne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.input{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+}
+.reponse{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.deleteCamion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.deleteCamion button{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background-color: #1D253D;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}

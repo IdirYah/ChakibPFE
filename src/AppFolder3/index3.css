@@ -1,0 +1,39 @@
+.bodyApp3{
+  margin:0;
+}
+.bodyApp3 div{
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  flex-direction: column;
+}
+.bodyApp3 h1{
+  font-size: 60px;
+  color: #1D253D;
+  font-family: 'poppins', sans-serif;
+  margin-top: 20px;
+}
+.bodyApp3 p{
+  font-size: 20px;
+  color: #1D253D;
+    margin-bottom: 0px;
+  font-family: 'poppins', sans-serif;
+  align-self: center ;
+}
+.bodyApp3 a{
+  font-size: 20px;
+  color: #1D253D;
+  margin-top: 30px;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+}
+
+.bodyApp3 a:hover{
+  text-decoration: underline;
+}
+.bodyApp3 img{
+  width: 70%;
+  margin-top: -10%;
+  z-index: -2;
+}

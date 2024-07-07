@@ -1,0 +1,77 @@
+.tout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1D253D;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    margin-bottom: 39px;
+    width: 86%;
+}
+.trajet{
+    width: 93%;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+}
+.lieu-trajet{
+    padding-top: 0px;
+    padding-left: 55px;
+    padding-right: 29px;  
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.colonne-trajet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.input-trajet{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;   
+}
+.reponse-trajet{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#destination{
+    padding-bottom: 30px;
+}
+.chauffeur-trajet{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.image-trajet{
+    margin-left: 75px;
+}
+#image{
+    margin-left: -50px;
+}
+.deleteTrajet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleteTrajet button{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    background-color: #1D253D;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px;
+}
