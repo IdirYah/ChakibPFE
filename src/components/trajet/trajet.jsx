@@ -27,13 +27,7 @@ function Trajet() {
       .then((response) => {
         setMessage(response)
         console.log(response)
-        setResponse(prevResponse => ({
-          ...prevResponse,
-          data: {
-            ...prevResponse.data,
-            camions: prevResponse.data.camions.filter(camion => camion.camion_id !== id)
-          }
-        }));
+        window.location.reload();
       })
       .catch(error => {
         console.log(error);

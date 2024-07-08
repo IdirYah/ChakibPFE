@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import './ajoutTrajet.css';
 import axios from 'axios';
 
-function AjoutTrajet() {
+function AjoutTrajet({onclose}) {
     const [nom,setNom] = useState('');
     const [prenom,setPrenom] = useState('');
     const [numAttestation,setNumAttestation] = useState('');
@@ -41,8 +41,11 @@ function AjoutTrajet() {
       axios.get('https://point-control-app.onrender.com/api/web/getInfo') 
         .then(response => {
           setResponse(response);
+          window.location.reload();
+          onclose();
         })
         .catch(error => {
+          onclose();
           console.log(error)
         });
     }, []);
