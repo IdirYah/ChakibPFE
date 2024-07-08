@@ -42,11 +42,8 @@ function AjoutTrajet({onclose}) {
         .then(response => {
           setResponse(response);
           console.log(response);
-          window.location.reload();
-          onclose();
         })
         .catch(error => {
-          onclose();
           console.log(error)
         });
     }, []);
@@ -129,8 +126,11 @@ function AjoutTrajet({onclose}) {
       .then(response => {
         setMessage(response.data);
         console.log(response.data);
+        window.location.reload();
+        onclose();
       })
       .catch(error => {
+        onclose();
         if (error.response) {
           setMessage('Invalid credentials');
         } else {
