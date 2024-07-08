@@ -22,6 +22,7 @@ function AjoutCamion({onClose}) {
     .then(response => {
       setMessage(response.data);
       console.log(response.data);
+      window.location.reload()
       onClose();
     })
     .catch(error => {
