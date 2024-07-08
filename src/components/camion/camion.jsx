@@ -20,15 +20,14 @@ function Camion() {
         console.log(error)
       });
   }, []); 
-  const handleDelete = (id) => {
+  const handleDelete = async(id,e) => {
     console.log(id)
-    const data = {
-      "camion_id": id
-    }
-    axios.delete('https://point-control-app.onrender.com/api/web/camion/deleteCamion',data)
+    await axios.delete('https://point-control-app.onrender.com/api/web/camion/deleteCamion',
+      {data:{"camion_id": id}}
+    )
       .then((response) => {
         setMessage(response)
-        console.log(message)
+        console.log(response)
       })
       .catch(error => {
         console.log(error);
@@ -55,11 +54,11 @@ function Camion() {
           </div>
           <div className='colonne'>
             <img src={camionimg} alt=''/>
-            <img src={qrcode} alt=''/>
+            <img src={camion.qr_code} alt=''/>
           </div>
         </div>
         <div className='deleteCamion'>
-          <button type='button' onClick={() => handleDelete(`${camion.camion_id}`)}>Supprimer</button>
+          <button type='button' onClick={(e) => handleDelete(camion.camion_id,e)}>Supprimer</button>
         </div>
         </div>
       ))}

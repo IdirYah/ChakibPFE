@@ -6,6 +6,7 @@ import Trajet from '../../components/trajet/trajet.jsx';
 import AjoutCamion from '../../components/ajoutCamion/ajoutCamion.jsx';
 import AjoutTrajet from '../../components/ajoutTrajet/ajoutTrajet.jsx';
 import axios from 'axios';
+import logo from '../../assets/Plan_de_travail_3_copie_2-removebg-preview.png'
 
 function ListCamionTrajet() {
   const [isAjoutCamionOpen, setIsAjoutCamionOpen] = useState(false);
@@ -65,7 +66,7 @@ function ListCamionTrajet() {
   return (
         <div className={`global ${isAjoutCamionOpen ? 'blurred' : 'normal'}`}>
           <div className='navbar-list'>
-            <p>LOGO CHAKIB</p>
+            <img src={logo} id='logo'/>
             <div className='links-list'>
               <a href="/"> Acceuil </a>
               <a href='#' onClick={scrollToCamions}>Vos Camions</a>

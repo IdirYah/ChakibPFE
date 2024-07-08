@@ -30,7 +30,8 @@ function AjoutTrajet() {
     const [image,setImage] = useState('');
     const [message,setMessage] = useState('');
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState('Choisissez un des camions');
+    const [selectedOption, setSelectedOption] = useState('Veuillez choisir un camion selon le numéro de carte grise');
+    const [selectedId, setSelectedId] = useState('');
     const [Response,setResponse] = useState('');
     useEffect(() => {
     
@@ -50,8 +51,9 @@ function AjoutTrajet() {
       setIsOpen(!isOpen);
     };
 
-    const handleOptionClick = (option) => {
-      setSelectedOption(option);
+    const handleOptionClick = (option1,option2) => {
+      setSelectedOption(option1);
+      setSelectedId(option2);
       setIsOpen(false);
     };
     
@@ -84,7 +86,7 @@ function AjoutTrajet() {
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       e.preventDefault();
       const data = {
-        "camion_id": selectedOption,
+        "camion_id": selectedId,
         "chauffeurs": [
             {
                 "nom": nom,
@@ -222,7 +224,7 @@ function AjoutTrajet() {
             {isOpen && (
             <ul className="dropdown-menu">
               {Response && Response.data.camions.map((camion, index) => (
-                <li onClick={() => handleOptionClick(`${camion.camion_id}`)} key={index}>{camion.num_carte_grise}</li>
+                <li onClick={() => handleOptionClick(camion.num_carte_grise,camion.camion_id)} key={index}>{camion.num_carte_grise}</li>
               ))}
             </ul>
             )}

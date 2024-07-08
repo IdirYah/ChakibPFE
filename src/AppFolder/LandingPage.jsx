@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/Plan_de_travail_3_copie_3-removebg-preview.png';
 const landingpage = ()  => {
   return (
     

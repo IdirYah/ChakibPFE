@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import './login.css';
 import image from '../../assets/Artboard 1@4x 1.png';
 import {Link,useNavigate} from "react-router-dom";
+import logo from '../../assets/Plan_de_travail_3_copie_2-removebg-preview.png';
 import axios from 'axios';
 
 function Login() {
@@ -35,7 +36,7 @@ function Login() {
   };
   return (
     <div className='global-login'>
-      <p id='logo'>LOGO PFE CHAKIB</p>
+      <img src={logo} id='logo'/>
       <div className='login'>
         <p id='text'>Se connecter</p>
         <div className='inputs-login'>

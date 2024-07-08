@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import image4 from '../assets/image4.png';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
+import logo from '../assets/Plan_de_travail_3_copie_3-removebg-preview.png';
 import axios from 'axios';
 
 const Page = () => {
@@ -9,13 +10,14 @@ const Page = () => {
   const [passwordLogin,setPassword] = useState('');
   const [confirmPassword,setConfirmPassword] = useState('');
   const [message,setMessage] = useState('');
+  const navigate = useNavigate();
 
-  const handleSignup = (e) => {
+  const handleSignup = async (e) => {
     e.preventDefault();
-    axios.post('https://point-control-app.onrender.com/api/web/entreprise/registerEntreprise', {
-      email: "hhh@gmail.com",
-      name: "hhh",
-      password: "hhh"
+    await axios.post('https://point-control-app.onrender.com/api/web/entreprise/registerEntreprise', {
+      "email" : emailLogin,
+      "name" : nameLogin,
+      "password" : passwordLogin
     }, {
       headers: {
         'Content-Type': 'application/json'
@@ -27,9 +29,12 @@ const Page = () => {
       console.log(response.data);
       const token = localStorage.getItem('jwt-token');
       console.log(token);
-      window.location.href = '/listCamionTrajet';
+      if (token) {
+        navigate('/listCamionTrajet');
+      }
     })
     .catch(error => {
+      console.log(error)
       if (error.response) {
         setMessage('Invalid credentials');
       } else {
@@ -41,17 +46,17 @@ const Page = () => {
     <>
       <div className="container">
         <div className="left-section">
-          <h1>LOGO PFE CHAKIB</h1>
+          <img src={logo} className='logo'/>
           <h2>S'inscrire</h2>
           <form onSubmit={handleSignup}>
-          <label htmlFor="company-name"><i className="fa fa-building"></i> Nom de l'entreprise</label>
-            <input type="text" id="company-name" name="company-name" value={nameLogin} onChange={(e)=>setName(e.target.value)} />
+            <label htmlFor="company-name"><i className="fa fa-building"></i> Nom de l'entreprise</label>
+            <input type="text" id="company-name" name="nameLogin" value={nameLogin} onChange={(e)=>setName(e.target.value)} />
 
             <label htmlFor="email"><i className="fa fa-envelope"></i> E-mail</label>
-            <input type="email" id="email" name="email" value={emailLogin} onChange={(e)=>setEmail(e.target.value)}/>
+            <input type="email" id="email" name="emailLogin" value={emailLogin} onChange={(e)=>setEmail(e.target.value)}/>
 
             <label htmlFor="password"><i className="fa fa-lock"></i> Mot de passe</label>
-            <input type="password" id="password" name="password" value={passwordLogin} onChange={(e)=>setPassword(e.target.value)}/>
+            <input type="password" id="password" name="passwordLogin" value={passwordLogin} onChange={(e)=>setPassword(e.target.value)}/>
 
             <label htmlFor="confirm-password"><i className="fa fa-lock"></i> Répétez votre mot de passe</label>
             <input type="password" id="confirm-password" name="confirm-password" onChange={(e)=>setConfirmPassword(e.target.value)}/>
@@ -67,7 +72,7 @@ const Page = () => {
         <div className="right-section">
           <div className="navbar">
             <a href="#" ><Link to='/'>Accueil</Link></a>
-            <a href="#">En savoir plus</a>
+            <a href="#"><Link to='/savoirPlus'>En savoir plus</Link></a>
           </div>
           <div className="graphic-content">
             <img src={image4} alt="image4" className='img4'/>

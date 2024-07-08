@@ -116,9 +116,10 @@ form button:hover {
 .img4{
   position: static;
   right: 50%;
-
-  
-
+}
+.logo{
+  width: 200px;
+  height: 150px;
 }
 
 .messageInscription {

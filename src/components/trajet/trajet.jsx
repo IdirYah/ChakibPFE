@@ -19,15 +19,14 @@ function Trajet() {
         console.log(error)
       });
   }, []); 
-  const handleDeleteTrajet = (id) => {
+  const handleDeleteTrajet = async(id,e) => {
     console.log(id)
-    const data = {
-      "camion_id": id
-    }
-    axios.delete('https://point-control-app.onrender.com/api/web/trajet/deleteTrajet',data)
+    await axios.delete('https://point-control-app.onrender.com/api/web/trajet/deleteTrajet',
+      {data:{"camion_id": id}}
+    )
       .then((response) => {
         setMessage(response)
-        console.log(message)
+        console.log(response)
       })
       .catch(error => {
         console.log(error);
@@ -83,7 +82,7 @@ function Trajet() {
               </div>
             </div>
             <div className='deleteTrajet'>
-              <button type='button' onClick={() => handleDeleteTrajet(`${camion.camion_id}`)}>Supprimer</button>
+              <button type='button' onClick={(e) => handleDeleteTrajet(camion.camion_id,e)}>Supprimer</button>
             </div>
             </div>
           );
