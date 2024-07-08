@@ -82,7 +82,7 @@ function AjoutTrajet({onclose}) {
         reader.readAsDataURL(file);
       }
     };
-    const handleaddTrajet = (e) => {
+    const handleaddTrajet = async (e) => {
       const token = localStorage.getItem('jwt-token');
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
       e.preventDefault();
@@ -122,7 +122,7 @@ function AjoutTrajet({onclose}) {
     }
     console.log(base64Image);
     console.log(image)
-      axios.post('https://point-control-app.onrender.com/api/web/trajet/addTrajet', data)
+      await axios.post('https://point-control-app.onrender.com/api/web/trajet/addTrajet', data)
       .then(response => {
         setMessage(response.data);
         console.log(response.data);
