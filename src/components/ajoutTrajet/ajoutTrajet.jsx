@@ -41,6 +41,7 @@ function AjoutTrajet({onclose}) {
       axios.get('https://point-control-app.onrender.com/api/web/getInfo') 
         .then(response => {
           setResponse(response);
+          console.log(response);
           window.location.reload();
           onclose();
         })
