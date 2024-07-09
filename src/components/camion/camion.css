@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
 .kolch{
     display: flex;
     flex-direction: column;
@@ -10,7 +14,6 @@
 }
 .camion{
     width: 86%;
-    height: 312px;
     padding-top: 69px;
     padding-bottom: 69px;
     padding-left: 67px;
@@ -25,30 +28,33 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
 }
 .input{
     color: #FFF;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;   
+    line-height: normal; 
+    padding-top: -30px;  
 }
 .reponse{
     color: rgba(255, 255, 255, 0.40);
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    padding-top: -50px;
 }
 .deleteCamion{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    padding-bottom: 60px;
 }
 .deleteCamion button{
     color: #FFF;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: normal; 

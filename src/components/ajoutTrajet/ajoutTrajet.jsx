@@ -144,83 +144,83 @@ function AjoutTrajet({onclose}) {
       <div className="form-container">
         <div className="form-section">
           <h2>Chauffeur <button className="add-btn">+</button> Ajouter un Chauffeur</h2>
-            <label>Nom</label>
-            <input type="text" onChange={(e)=>setNom(e.target.value)}/>
+            <label>Nom</label><br/>
+            <input type="text" onChange={(e)=>setNom(e.target.value)}/><br/>
 
-            <label>Prénom</label>
-            <input type="text" onChange={(e)=>setPrenom(e.target.value)}/>
+            <label>Prénom</label><br/>
+            <input type="text" onChange={(e)=>setPrenom(e.target.value)}/><br/>
 
-            <label>Numéro d'Attestation de Travail</label>
-            <input type="text" onChange={(e)=>setNumAttestation(e.target.value)}/>
+            <label>Numéro d'Attestation de Travail</label><br/>
+            <input type="text" onChange={(e)=>setNumAttestation(e.target.value)}/><br/>
 
-            <label>Numéro du Brevet Matière Dangereuse</label>
-            <input type="text" onChange={(e)=>setNumBrevet(e.target.value)}/>
+            <label>Numéro du Brevet Matière Dangereuse</label><br/>
+            <input type="text" onChange={(e)=>setNumBrevet(e.target.value)}/><br/>
 
-            <label>Photo du Conducteur</label>
-            <input type="file" onChange={handleImageUpload}/>
+            <label>Photo du Conducteur</label><br/>
+            <input type="file" onChange={handleImageUpload}/><br/>
 
-            <label>Source</label>
-            <input type="text" onChange={(e)=>setSource(e.target.value)}/>
+            <label>Source</label><br/>
+            <input type="text" onChange={(e)=>setSource(e.target.value)}/><br/>
 
-            <label>Date de Départ</label>
-            <input type="text" onChange={(e)=>setDateDepart(e.target.value)}/>
+            <label>Date de Départ</label><br/>
+            <input type="text" onChange={(e)=>setDateDepart(e.target.value)}/><br/>
 
-            <label>Heure de Départ</label>
-            <input type="text" onChange={(e)=>setHeureDepart(e.target.value)}/>
+            <label>Heure de Départ</label><br/>
+            <input type="text" onChange={(e)=>setHeureDepart(e.target.value)}/><br/>
 
-            <label>Destination</label>
-            <input type="text" onChange={(e)=>setDestination(e.target.value)}/>
+            <label>Destination</label><br/>
+            <input type="text" onChange={(e)=>setDestination(e.target.value)}/><br/>
 
-            <label>Date d'Arrivée Prévu</label>
-            <input type="text" onChange={(e)=>setDateArrivee(e.target.value)}/>
+            <label>Date d'Arrivée Prévu</label><br/>
+            <input type="text" onChange={(e)=>setDateArrivee(e.target.value)}/><br/>
 
-            <label>Heure d'Arrivée Prévu</label>
-            <input type="text" onChange={(e)=>setHeureArrivee(e.target.value)}/>
+            <label>Heure d'Arrivée Prévu</label><br/>
+            <input type="text" onChange={(e)=>setHeureArrivee(e.target.value)}/><br/>
         </div>
         
         <div className="form-section">
           <h2>Matière <button className="add-btn">+</button> Ajouter un Matière</h2>
-            <label>Nom de la matière</label>
-            <input type="text" onChange={(e)=>setMatiere(e.target.value)}/>
+            <label>Nom de la matière</label><br/>
+            <input type="text" onChange={(e)=>setMatiere(e.target.value)}/><br/>
             
-            <label>Classe</label>
-            <input type="text" onChange={(e)=>setClasse(e.target.value)}/>
+            <label>Classe</label><br/>
+            <input type="text" onChange={(e)=>setClasse(e.target.value)}/><br/>
 
-            <label>Pictogramme</label>
-            <input type="file" onChange={handleImage}/>
+            <label>Pictogramme</label><br/>
+            <input type="file" onChange={handleImage}/><br/>
 
-            <label>Type</label>
-            <input type="text" onChange={(e)=>setType(e.target.value)}/>
+            <label>Type</label><br/>
+            <input type="text" onChange={(e)=>setType(e.target.value)}/><br/>
 
-            <label>Code Classification</label>
-            <input type="text" onChange={(e)=>setCodeClassification(e.target.value)}/>
+            <label>Code Classification</label><br/>
+            <input type="text" onChange={(e)=>setCodeClassification(e.target.value)}/><br/>
 
-            <label>Quantité</label>
-            <input type="text" onChange={(e)=>setQuantite(e.target.value)}/>
+            <label>Quantité</label><br/>
+            <input type="text" onChange={(e)=>setQuantite(e.target.value)}/><br/>
 
-            <label>Groupe d'Emballage</label>
-            <input type="text" onChange={(e)=>setEmballage(e.target.value)}/>
+            <label>Groupe d'Emballage</label><br/>
+            <input type="text" onChange={(e)=>setEmballage(e.target.value)}/><br/>
 
-            <label>Code Restriction tunnel</label>
-            <input type="text" onChange={(e)=>setCodeTunnel(e.target.value)}/>
+            <label>Code Restriction tunnel</label><br/>
+            <input type="text" onChange={(e)=>setCodeTunnel(e.target.value)}/><br/>
 
-            <label>Code Danger</label>
-            <input type="text" onChange={(e)=>setDanger(e.target.value)}/>
+            <label>Code Danger</label><br/>
+            <input type="text" onChange={(e)=>setDanger(e.target.value)}/><br/>
 
-            <label>Numéro onu</label>
-            <input type="text" onChange={(e)=>setOnu(e.target.value)}/>
+            <label>Numéro onu</label><br/>
+            <input type="text" onChange={(e)=>setOnu(e.target.value)}/><br/>
 
-            <label>Numéro Controle Technique</label>
-            <input type="text" onChange={(e)=>setNumCiterne(e.target.value)}/>
+            <label>Numéro Controle Technique</label><br/>
+            <input type="text" onChange={(e)=>setNumCiterne(e.target.value)}/><br/>
 
-            <label>Date Controle Technique</label>
-            <input type="text" onChange={(e)=>setDateCiterne(e.target.value)}/>
+            <label>Date Controle Technique</label><br/>
+            <input type="text" onChange={(e)=>setDateCiterne(e.target.value)}/><br/>
 
-            <label>Numéro d'Assurance</label>
-            <input type="text" onChange={(e)=>setAssuranceCiterne(e.target.value)}/>
+            <label>Numéro d'Assurance</label><br/>
+            <input type="text" onChange={(e)=>setAssuranceCiterne(e.target.value)}/><br/>
 
-            <label>Date d'Assurance</label>
-            <input type="text" onChange={(e)=>setDateAssuranceCiterne(e.target.value)}/>
+            <label>Date d'Assurance</label><br/>
+            <input type="text" onChange={(e)=>setDateAssuranceCiterne(e.target.value)}/><br/>
 
             <button onClick={toggleDropdown} className="dropdown-toggle">
               <p>{selectedOption}</p>
