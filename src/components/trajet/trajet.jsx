@@ -78,7 +78,9 @@ function Trajet() {
                       )}
                 </div>
                 <div className='colonne-trajet'>
-                  <img src={danger} alt='' id='image'/>
+                  {camion.matieres.map((image,index)=>(
+                    <img key={index} src={image.pictogramme} alt='' id='image'/>
+                  ))}
                 </div>
               </div>
             </div>
